@@ -1,0 +1,154 @@
+/* Reset */
+@import url(./font.css);
+html, 
+body, 
+div, 
+span, 
+iframe, 
+h1,h2,h3,h4,h5,h6, 
+p, 
+blockquote, 
+pre, 
+cite, 
+code, 
+del, 
+em, 
+img, 
+ins,
+q,
+small,
+strong,
+sub,
+sup,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+legend,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+/* 문서 전체 CSS 적용 */
+body {
+    line-height: 1;
+}
+/* HTML5 시멘틱 태그들 IE 구버전 인식 설정 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+/* List 요소 */
+ul, li, ol {
+    list-style: none;
+}
+
+/* Anchor 요소 */
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1em;
+    vertical-align: baseline;
+    background: none;
+}
+
+/* img 요소*/
+img {
+    vertical-align: top;
+}
+
+/* hr 요소 */
+hr {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* input, textarea 요소 */
+input, textarea {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+}
+
+/* button 요소 */
+button {
+    background: none;
+}
+
+/* 박스사이징 */
+* {
+    box-sizing: border-box;
+}
+
+/* 플롯해제 */
+.cf:after {
+    content:"";
+    display:block;
+    clear: both;
+}
+
+/* 마진, 패딩 없애기 */
+.no_mt {margin-top: 0 !important;}
+.no_mr {margin-right: 0 !important;}
+.no_mb {margin-bottom: 0 !important;}
+.no_ml {margin-left: 0 !important;}
+
+.no_pt {padding-top: 0 !important;}
+.no_pr {padding-right: 0 !important;}
+.no_pb {padding-bottom: 0 !important;}
+.no_pl {padding-left: 0 !important;}
+
+/* 브라우저에 안보여도 되지만, 반드시 입력해야 할 HTML태그가 존재(웹접근성 때문에) */
+.blind {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -99999px;
+    overflow: hidden;
+}
